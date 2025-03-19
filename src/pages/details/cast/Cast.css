@@ -1,0 +1,165 @@
+.castSection {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.castSection .sectionHeading {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.castSection .listItems {
+    display: flex;
+    gap: 20px;
+    overflow-y: hidden;
+    margin-right: -20px;
+    margin-left: -20px;
+    padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+    .castSection .listItems {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.castSection .listItems .listItem {
+    text-align: center;
+    color: white;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+    position: relative;
+}
+
+.castSection .listItems .listItem .profileImg {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block; /* Ensure the container is properly sized */
+}
+
+@media (min-width: 768px) {
+    .castSection .listItems .listItem .profileImg {
+        width: 175px;
+        height: 175px;
+        margin-bottom: 25px;
+    }
+}
+
+.castSection .listItems .listItem .profileImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+}
+
+/* Rotating Circle Animation */
+.castSection .listItems .listItem .profileImg::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Circle border */
+    border-radius: 50%;
+    animation: rotateCircle 3s linear infinite;
+    z-index: 1; /* Ensure the circle is above the image */
+}
+
+@keyframes rotateCircle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.castSection .listItems .listItem .name {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+@media (min-width: 768px) {
+    .castSection .listItems .listItem .name {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+.castSection .listItems .listItem .character {
+    font-size: 14px;
+    line-height: 20px;
+    opacity: 0.5;
+}
+
+@media (min-width: 768px) {
+    .castSection .listItems .listItem .character {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.castSection .castSkeleton {
+    display: flex;
+    gap: 20px;
+    overflow-y: hidden;
+    margin-right: -20px;
+    margin-left: -20px;
+    padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+    .castSection .castSkeleton {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.castSection .castSkeleton .skItem .circle {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+    .castSection .castSkeleton .skItem .circle {
+        width: 175px;
+        height: 175px;
+        margin-bottom: 25px;
+    }
+}
+
+.castSection .castSkeleton .skItem .row {
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.castSection .castSkeleton .skItem .row2 {
+    width: 75%;
+    height: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
