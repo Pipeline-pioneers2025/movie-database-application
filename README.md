@@ -1,5 +1,5 @@
 # Pipeline Pioneers - Movie Website App 🎬
-A complete React js movie application.
+Pipeline Pioneers is a movie and TV show discovery platform that allows users to search, explore, and view detailed information about their favorite movies and TV shows. With a sleek and user-friendly interface, users can easily filter and sort content to find trending, popular, and top-rated movies and TV shows. 🌟
 
 **live demo: (https://movie-database-application.onrender.com)**
 
