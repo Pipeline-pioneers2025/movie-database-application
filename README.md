@@ -55,15 +55,6 @@ npm run dev
 
 ---
 
-## FAQ
-
-### Q: What are the prerequisites?
-
-basics of html, css, javascript and some basic knowledge of react is enough to start this project. Rest you will learn in the tutorial.
-
-### Q: Who the project is for?
-
-The project is for the people who wanna get more skilled in `ReactJs`.
 
 ---
 
