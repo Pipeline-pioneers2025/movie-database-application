@@ -6,6 +6,7 @@ A complete React js movie application.
 ---
 
 
+
 ---
 
 ## Project Description
@@ -59,13 +60,6 @@ The project is for the people who wanna get more skilled in `ReactJs`.
 
 ---
 
-## Feedback
-
-
-
-Happy Coding! 🚀
-
-# Website's screenshots
  
  ## Home page
  

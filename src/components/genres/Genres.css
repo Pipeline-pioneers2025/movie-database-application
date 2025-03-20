@@ -1,0 +1,30 @@
+.genres-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.genre-card {
+    background: linear-gradient(135deg, #ff6f61, #ff3b3b);
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.genre-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 59, 59, 0.4);
+}
+
+.genre-name {
+    letter-spacing: 0.5px;
+}

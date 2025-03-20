@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import InfiniteScroll from "react-infinite-scroll-component";
 import Select from "react-select";
-
-import "./style.scss";
+import './Explore.css'
 
 import useFetch from "../../hooks/useFetch";
 import { fetchDataFromApi } from "../../utils/api";
