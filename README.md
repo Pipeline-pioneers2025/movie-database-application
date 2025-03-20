@@ -60,8 +60,6 @@ The project is for the people who wanna get more skilled in `ReactJs`.
 
 ---
 
-
-# Website's screenshots
  
  ## Home page
  
