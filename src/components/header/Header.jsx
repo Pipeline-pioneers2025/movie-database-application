@@ -3,11 +3,10 @@ import { HiOutlineSearch } from "react-icons/hi";
 import { SlMenu } from "react-icons/sl";
 import { VscChromeClose } from "react-icons/vsc";
 import { useNavigate, useLocation } from "react-router-dom";
-
-import "./style.scss";
+import './Header.css'
 
 import ContentWrapper from "../contentWrapper/ContentWrapper";
-import logo from "../../assets/cinemx.png";
+import logo from "../../assets/coconut . (1).png";
 
 const Header = () => {
   //states creating
