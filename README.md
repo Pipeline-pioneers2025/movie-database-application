@@ -1,4 +1,4 @@
-# Cinemx
+# Pipeline Pioneers - Movie Website App 🎬
 A complete React js movie application.
 
 **live demo: (https://movie-database-application.onrender.com)**
@@ -19,7 +19,7 @@ A complete React js movie application.
 *Similar Movies: Discover similar movies at the bottom of the details page.
 *Trailer Popup: Play movie trailers via a video popup.
 *Explore Section: Navigate movies and TV shows via the header section.
-*Filters and Sorting: Filter movies by genres and sort on the explore page
+
 ## What I used
 
 - [React](https://reactjs.org/)
