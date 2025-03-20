@@ -1,8 +1,7 @@
 
 <<<<<<< HEAD
 =======
-**live demo: [https://cinemx.vercel.app/](https://cinemx.vercel.app/)**
-
+**live demo: https://movie-database-application.onrender.com/
 ---
 
 
