@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import {fetchDataFromApi} from "./utils/api";
 import { useSelector, useDispatch } from 'react-redux';
 import { getApiConfiguration, getGenres } from './store/homeSlice';
-
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import Home from "./pages/home/Home";
@@ -39,7 +38,7 @@ const fetchApiConfig = () =>{
     });
 };
 
-//use promises because 2 request should send to server to get 2 responses at the same time.
+
 const genresCall = async ()=>{
   let promises = [];
   let endPoints = ["tv","movie"];
@@ -55,7 +54,7 @@ const genresCall = async ()=>{
     return genres.map((item)=>(allGenres[item.id] = item));
   });
 
-  //store genres in redux store
+  //store genres in redux stor
   dispatch(getGenres(allGenres));
 };
 
@@ -64,8 +63,8 @@ const genresCall = async ()=>{
   <Header/>
   <Routes>
     <Route path='/' element={<Home/>}/>
-    <Route path='/:mediaType/:id' element={<Details/>}/>
     <Route path='/search/:query' element={<SearchResult/>}/>
+    <Route path='/:mediaType/:id' element={<Details/>}/>
     <Route path='/explore/:mediaType' element={<Explore/>}/>
     <Route path='*' element={<PageNotFound/>}/>
   </Routes>
